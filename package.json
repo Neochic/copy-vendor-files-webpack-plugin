@@ -1,0 +1,26 @@
+{
+  "name": "copy-vendor-files-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Parse generated css for node_modules path fragments and copy the referenced files to a public vendor directory applying a cache bust to the filenames, as well as the referencing css.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Neochic/copy-vendor-files-webpack-plugin.git"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "contributors": [
+    "Christoph Stickel <christoph@neochic.de>",
+    "Franz-R. Reinhart <franz@neochic.de>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Neochic/copy-vendor-files-webpack-plugin",
+  "devDependencies": {
+    "jasmine": "^2.8.0"
+  },
+  "dependencies": {
+    "fs-extra": "^5.0.0",
+    "glob": "^7.1.2"
+  }
+}
