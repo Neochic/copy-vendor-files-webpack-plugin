@@ -3,7 +3,7 @@ module.exports = function(source) {
     const resourcePath = this.resourcePath;
     options.processEntry(resourcePath);
 
-    return source.replace(/url\((?:['"]?)((?:\.\.\/)*node_modules\/(.*?))(?:['"]?)\)/g, function(match, styleRelativePath, nodeModulesRelativePath) {
+    return source.replace(/url\((?:(?:\\?['"])?)((?:\.\.\/)*node_modules\/(.*?))(?:(?:\\?['"])?)\)/g, function(match, styleRelativePath, nodeModulesRelativePath) {
         nodeModulesRelativePath = nodeModulesRelativePath.split(/[?#]+/)[0];
         const filePathWithCacheBust = options.addFile(resourcePath, nodeModulesRelativePath);
 
